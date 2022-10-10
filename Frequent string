@@ -1,0 +1,11 @@
+input = input("enter value")
+print(input)
+frequencies = {} 
+  
+for char in input: 
+   if char in frequencies: 
+      frequencies[char] += 1
+   else: 
+      frequencies[char] = 1
+
+print ("Per char frequency in '{}' is :\n {}".format(input, str(frequencies)))
